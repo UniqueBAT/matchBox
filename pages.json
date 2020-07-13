@@ -1,0 +1,87 @@
+{
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^y-(.*)": "@/components/y-$1/y-$1.vue" //以此组件命名方式的可以在页面中直接使用不需要引用注册
+		}
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "浮岛"
+			}
+		},{
+			"path": "pages/login/login"
+		},  {
+			"path": "pages/music/music",
+			"style": {
+				"navigationBarTitleText": "音乐角"
+			}
+		}, {
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "我"
+			}
+		}, {
+			"path": "pages/push/push",
+			"style": {
+				"navigationBarTitleText": "碎碎念"
+			}
+		}, {
+			"path": "pages/mine/timeLine",
+			"style": {
+				"navigationBarTitleText": "时间线"
+			}
+		}, {
+			"path": "pages/mine/edit",
+			"style": {}
+		}, {
+			"path": "pages/mine/other",
+			"style": {}
+		}, {
+			"path": "pages/diary/details",
+			"style": {}
+		}, {
+			"path": "pages/mine/like",
+			"style": {}
+		}, {
+			"path": "pages/mine/fans",
+			"style": {}
+		}
+	],
+	"globalStyle": {
+		// #ifdef H5
+		"navigationStyle": "custom",
+		// #endif
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "浮岛",
+		"navigationBarBackgroundColor": "#FFF",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#435257",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/img/tab/index.png",
+				"selectedIconPath": "static/img/tab/index_1.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/music/music",
+				"iconPath": "static/img/tab/music.png",
+				"selectedIconPath": "static/img/tab/music_1.png",
+				"text": "音乐角"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"iconPath": "static/img/tab/mine.png",
+				"selectedIconPath": "static/img/tab/mine.png",
+				"text": "我"
+			}
+		]
+	}
+}
